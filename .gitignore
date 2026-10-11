@@ -1,0 +1,10 @@
+venv/
+.venv/
+.env
+.idea/
+.vscode/
+__pycache__/
+*.py[cod]
+*.log
+ollama
+.DS_Store

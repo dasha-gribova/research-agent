@@ -1,0 +1,92 @@
+[
+  {
+  "id": "paper_001",
+  "title": "3D Gaussian Splatting for Real-Time Radiance Field Rendering",
+  "authors": ["Kerbl B.", "Kopanas G.", "Leimkühler T.", "Drettakis G."],
+  "year": 2023,
+  "citations": 2847,
+  "abstract": "We present a novel approach to real-time radiance field rendering that uses anisotropic 3D Gaussians as a scene representation. Our method achieves high-quality novel view synthesis at unprecedented frame rates, making it suitable for real-time applications.",
+  "keywords": ["3D Gaussian Splatting", "radiance fields", "real-time rendering", "novel view synthesis"],
+  "venue": "ACM Transactions on Graphics (SIGGRAPH 2023)",
+  "full_text": "Radiance field methods have recently revolutionized novel-view synthesis from images captured in-the-wild. However, these methods still require a costly optimization procedure and are fundamentally limited to slow rendering, due to their reliance on ray tracing. We introduce an alternative formulation that retains the benefits of continuous volumetric radiance fields while enabling fast rasterization-based rendering. Specifically, we represent scenes as a collection of anisotropic 3D Gaussians. Each Gaussian is characterized by its position (mean), covariance matrix (encoding scaling, rotation, and shearing), opacity, and view-dependent color expressed via spherical harmonics. We optimize these parameters to match captured images using differentiable rendering based on tile-based Gaussian splatting. Our approach achieves state-of-the-art quality in terms of PSNR, SSIM, and LPIPS while maintaining real-time frame rates (often exceeding 100 fps). The method is particularly well-suited for novel view synthesis, virtual reality applications, and scene reconstruction tasks where both quality and speed are critical."
+},
+  {
+  "id": "paper_002",
+  "title": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks",
+  "authors": ["Lewis P.", "Perez E.", "Piktus A.", "Petroni F.", "Karpukhin V."],
+  "year": 2020,
+  "citations": 4523,
+  "abstract": "We explore a general-purpose sequence-to-sequence architecture for NLP tasks where knowledge-intensive approaches have been successful. Our RAG models combine a pre-trained sequence-to-sequence model with a retriever, achieving state-of-the-art results.",
+  "keywords": ["RAG", "retrieval-augmented generation", "knowledge-intensive NLP", "open-domain QA"],
+  "venue": "NeurIPS 2020",
+  "full_text": "Large pre-trained language models have been shown to store factual knowledge in their parameters, and achieve state-of-the-art results when fine-tuned on downstream NLP tasks. However, their ability to access and precisely manipulate knowledge is still limited, and hence on knowledge-intensive tasks, their performance falls behind specialized task-specific models. We explore a general-purpose fine-tuning recipe for augmenting pre-trained sequence-to-sequence models with a pre-trained neural retriever. Our Retrieval-Augmented Generation (RAG) models combine an off-the-shelf dense retrieval component (DPR) with a seq2seq generator (BART). RAG models are end-to-end differentiable, allowing the retriever and generator to be jointly fine-tuned. We evaluate RAG on open-domain question answering, fact verification, and knowledge-grounded dialogue tasks, where RAG achieves state-of-the-art performance. Notably, RAG outperforms much larger models with orders of magnitude more parameters while requiring significantly less computation. The approach demonstrates that combining parametric memory (pre-trained generator) with non-parametric memory (retrieval corpus) yields better results than either approach alone, and enables easy knowledge updates without retraining."
+},
+  {
+  "id": "paper_003",
+  "title": "Scaling WebPage-Level Graph Neural Networks for Document Understanding",
+  "authors": ["Hu Z.", "Dong Y.", "Wang K.", "Sun Y."],
+  "year": 2024,
+  "citations": 156,
+  "abstract": "We propose a scalable approach to document understanding using knowledge graphs and graph neural networks. Our method combines structured information extraction with graph-based reasoning for complex analytical tasks.",
+  "keywords": ["knowledge graphs", "graph neural networks", "document understanding", "information extraction"],
+  "venue": "KDD 2024",
+  "full_text": "Document understanding systems must integrate information from multiple sources: text, tables, figures, and metadata. Knowledge graphs provide a natural representation for this heterogeneous information, but scaling GNN-based reasoning to web-scale corpora remains challenging. We present a novel architecture that combines transformer-based information extraction with scalable graph neural networks. Our approach first extracts entities and relations from documents using fine-tuned language models, then constructs a document-level knowledge graph. For reasoning, we use a hierarchical GNN that operates at multiple granularities: entity-level, document-level, and corpus-level. We introduce efficient sampling strategies that enable training on graphs with billions of edges. Experiments on scientific document understanding tasks show our method outperforms baselines by 15-23% on relation extraction, fact verification, and complex reasoning tasks. The system is deployed in production, processing millions of documents daily with sub-second latency for most queries."
+},
+  {
+  "id": "paper_004",
+  "title": "AutoGen: Enabling Next-Gen LLM Applications via Multi-Agent Conversation",
+  "authors": ["Wu Q.", "Bansal G.", "Zhang J.", "Wu Y.", "Li B.", "Zhu E."],
+  "year": 2024,
+  "citations": 892,
+  "abstract": "We present AutoGen, a framework for building multi-agent applications where customizable agents converse with each other to solve complex tasks. The framework supports diverse conversation patterns and integration with external tools.",
+  "keywords": ["multi-agent systems", "LLM applications", "conversational AI", "tool use"],
+  "venue": "ICML 2024",
+  "full_text": "Large language models have demonstrated remarkable capabilities across a wide range of tasks, yet complex real-world problems often require collaborative problem-solving that exceeds the capacity of a single model. We introduce AutoGen, an open-source framework for building next-generation LLM applications through multi-agent conversations. AutoGen provides a flexible architecture where developers can define customizable agents with specific roles, capabilities, and backends. These agents can engage in multi-turn conversations following various patterns: sequential, hierarchical, or peer-to-peer. The framework natively supports tool use, code execution, and human-in-the-loop interactions. Key features include: (1) modular agent design with pluggable LLM backends, (2) flexible conversation orchestration, (3) built-in support for function calling and external tool integration, and (4) robust error handling and recovery mechanisms. We demonstrate AutoGen's effectiveness across 12 diverse applications including code generation, data analysis, research assistance, and complex decision-making. Evaluation shows multi-agent approaches outperform single-agent baselines by 28-45% on complex reasoning tasks while maintaining interpretability through conversation traces."
+},
+  {
+  "id": "paper_005",
+  "title": "How to find expressible and trainable parameterized quantum circuits?",
+  "authors": ["Peter Röseler", "Dennis Willsch", "Kristel Michielsen"],
+  "year": 2026,
+  "citations": 0,
+  "abstract": "Whether parameterized quantum circuits (PQCs) can be systematically constructed to be both trainable and expressive remains an open question. Highly expressive PQCs often exhibit barren plateaus, while several trainable alternatives admit efficient classical simulation. We address this question by deriving a finite-sample, dimension-independent concentration bound for estimating the variance of a PQC cost function, yielding explicit trainability guarantees. Across commonly used ansätze, we observe an anticorrelation between trainability and expressibility, consistent with theoretical insights. Building on this observation, we propose a property-based ansatz-search framework for identifying circuits that combine trainability and expressibility. We demonstrate its practical viability on a real quantum computer and apply it to variational quantum algorithms. We identify quantum neural network ansätze with improved effective dimension using over 6× fewer parameters, and for VQE on H2 we achieve UCCSD-like accuracy at substantially reduced circuit complexity.",
+  "keywords": ["parameterized quantum circuits", "barren plateaus", "variational quantum algorithms", "VQE", "QNN", "ansatz search", "trainability", "expressibility", "Bayesian optimization", "NISQ"],
+  "venue": "arXiv preprint 2603.14451 (March 2026)",
+  "arxiv_id": "2603.14451",
+  "authors_affiliations": ["Jülich Supercomputing Centre", "Universität zu Köln", "University of Applied Sciences Aachen", "AIDAS"],
+  "main_contributions": [
+    "Finite-sample, dimension-independent concentration bound for PQC gradient variance estimation",
+    "Operational barren-plateau diagnostic based on gradient-to-noise ratio on NISQ devices",
+    "Property-based ansatz search framework optimizing expressibility, trainability, entanglement, and complexity",
+    "Hardware-constrained ansatz discovery on 5-qubit IQM Spark quantum processor",
+    "Demonstration that highly expressive circuits typically anticorrelate with trainability"
+  ],
+  "key_metrics": {
+    "expressibility": "KL divergence between PQC-generated and Haar-random fidelity distributions",
+    "trainability": "gradient variance over noise floor (Pr_PQC(err)) ratio",
+    "entanglement": "Meyer-Wallach measure (average linear entropy of single-qubit subsystems)",
+    "complexity": "normalized sum of parameter count, circuit depth, and gate count"
+  },
+  "methods": [
+    "Bayesian optimization for ansatz search",
+    "Monte Carlo sampling for metric estimation (5000 samples for expressibility, 11806 for trainability)",
+    "Gradient clipping for bounded sample assumption",
+    "Concentration inequality for self-bounding random variables (Maurer & Pontil theorem)",
+    "Hierarchical cost functions with primary and secondary objectives"
+  ],
+  "results": [
+    "Discovered QNN ansätze achieve higher effective dimension using 6× fewer parameters (7 vs 40)",
+    "For VQE on H2: UCCSD-like accuracy at substantially reduced circuit complexity",
+    "Hardware-constrained search on IQM Spark improves over all benchmark circuits within search space",
+    "Strong positive correlation between expressibility and entanglement observed",
+    "Anticorrelation between expressibility and trainability confirmed across benchmark families"
+  ],
+  "limitations": [
+    "Metric values depend on the reference state used for evaluation",
+    "Metric drift may occur along optimization trajectory",
+    "Global Haar-based expressibility not sufficient to guarantee ground-state convergence in VQE",
+    "Scaling with qubit number and circuit depth requires further study"
+  ],
+  "full_text": "Parameterized quantum circuits (PQCs) are the core model class of variational quantum algorithms (VQAs), underlying prominent examples such as the variational quantum eigensolver (VQE) and the quantum approximate optimization algorithm (QAOA), and forming the basis of quantum neural networks (QNNs). The choice of ansatz is a primary performance bottleneck: an ansatz that is too restricted may not represent the target solution (low expressibility), while an overly flexible circuit can induce unfavorable optimization landscapes (low trainability), in particular associated with gradients that vanish exponentially with system size (barren plateaus).\n\nA central open question addressed in this paper is whether there exist expressible and trainable quantum circuits. Recent works suggest that highly expressive families can be prone to barren plateaus, while circuit classes that avoid or soften barren plateaus may exploit structures that correlate with efficient classical simulation.\n\nThe authors introduce a finite-sample, dimension-free concentration bound that enables estimating whether a given PQC, under arbitrary initialization and cost function, exhibits barren-plateau behavior. They use this bound to define a practical trainability objective through empirical gradient statistics and propose property-based ansatz design: instead of optimizing directly for a computationally expensive downstream objective, they optimize proxy properties—expressibility, trainability, entanglement, and complexity—to identify hardware-efficient, non-simulable, and optimizable circuits.\n\nExpressibility is quantified via KL divergence between fidelity distributions: the PQC-induced distribution versus Haar-random pure states. Trainability is diagnosed through an operational criterion: gradient variance must exceed the noise floor of the NISQ device. Entanglement is measured via the Meyer-Wallach measure. Complexity is captured by a normalized combination of parameter count, circuit depth, and gate count.\n\nExperiments use Bayesian optimization with up to 10,000 trials. The framework discovers circuits satisfying metric thresholds while substantially reducing complexity relative to strongest benchmarks. Multi-objective searches reproduce the expected anticorrelation between expressibility and trainability.\n\nHardware validation is performed on the 5-qubit IQM Spark (JIQCER-5) quantum processor at Jülich Supercomputing Centre, with search space restricted to native gate set (Rz, CZ) and star connectivity. Already with 50 hardware iterations, the discovered ansatz improves over all benchmark circuits.\n\nIn QNN case studies, discovered PQCs achieve higher effective dimension (information-geometric complexity measure from Fisher information) using substantially fewer trainable parameters (7 vs 40). For VQE on H2, the framework achieves UCCSD-like accuracy at substantially reduced circuit complexity when using qubit-excitation operators that preserve particle number and spin symmetries.\n\nKey limitations acknowledged include dependence of metrics on reference state, potential metric drift during optimization, and the observation that global Haar-based expressibility does not guarantee ground-state convergence in VQE—the relevant search manifold is constrained by particle number and spin symmetries, requiring task-aligned expressibility definitions.\n\nThe framework is metric-agnostic: users can plug in task-specific objectives and constraints, and the search returns ansätze tailored to those choices. Future work proposes studying metric evaluation on larger sets of initializations, scaling with qubit number, incorporation of non-stabilizerness measures, and crafting ansätze tied to physical phenomena for improved interpretability."
+}
+]
